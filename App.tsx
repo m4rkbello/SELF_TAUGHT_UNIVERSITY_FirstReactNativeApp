@@ -1,12 +1,4 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
-
 import React from 'react';
-import type {PropsWithChildren} from 'react';
 import {
   Image,
   SafeAreaView,
@@ -17,7 +9,6 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
-
 
 function App(): React.JSX.Element {
   return (
@@ -37,7 +28,7 @@ function App(): React.JSX.Element {
       </Text>
       <Image style={styles.image} source={{uri: 'https://i.ibb.co/F7df0bb/pic-removebg-preview.png'}} />
 
-      <Image so />
+      <Image/>
     </View>
   );
 }
