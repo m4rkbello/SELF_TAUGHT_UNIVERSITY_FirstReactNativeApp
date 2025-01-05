@@ -28,6 +28,8 @@ function App(): React.JSX.Element {
       </Text>
       <Image style={styles.image} source={{uri: 'https://i.ibb.co/F7df0bb/pic-removebg-preview.png'}} />
 
+      <Image style={styles.image} source={require('./assets/bello.JPG')} />
+
       <Image/>
     </View>
   );
