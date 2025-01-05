@@ -1,16 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   Image,
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
   StyleSheet,
   Text,
-  useColorScheme,
   View,
+  Button,
 } from 'react-native';
 
 function App(): React.JSX.Element {
+
+const [count, setCount] = useState<number>(0)  
+
   return (
     <View style={styles.container}>
 
@@ -26,11 +26,15 @@ function App(): React.JSX.Element {
           SIGE PADAYON
         </Text>
       </Text>
+      {/** ONLINE LINKING TO DISPLAY AN IMAGE */}
       <Image style={styles.image} source={{uri: 'https://i.ibb.co/F7df0bb/pic-removebg-preview.png'}} />
+      {/** OFFLINE PATH DIRECTORY TO DISPLAY AN IMAGE */}
+      <Image style={styles.image} source={require('./assets/bello.jpg')} />
 
-      <Image style={styles.image} source={require('./assets/bello.JPG')} />
-
-      <Image/>
+      {/**BUTTON COMPONENT ADD AND SUBTRACT USING useState and onPress */}
+      <Button title='ADD' onPress={()=>setCount(count + 1)} />
+      <Button title='SUBTRACT' onPress={()=>setCount(count - 1)} />
+      <Text> Count is {count}</Text>
     </View>
   );
 }
@@ -64,8 +68,8 @@ const styles = StyleSheet.create({
       fontSize: 30
     },
     innerText: {
-      fontSize: 30,
-      fontWeight: 'bold'
+      fontSize: 25,
+      fontWeight: 'regular'
     },
     image: {
       resizeMode: 'contain',
