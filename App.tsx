@@ -34,6 +34,8 @@ const [count, setCount] = useState<number>(0)
       {/**BUTTON COMPONENT ADD AND SUBTRACT USING useState and onPress */}
       <Button title='ADD' onPress={()=>setCount(count + 1)} />
       <Button title='SUBTRACT' onPress={()=>setCount(count - 1)} />
+      <Button title='MULTIPLY' onPress={()=>setCount(count * 2)} />
+      <Button title='DEVIDE' onPress={()=>setCount(count / 2)} />
       <Text> Count is {count}</Text>
     </View>
   );
