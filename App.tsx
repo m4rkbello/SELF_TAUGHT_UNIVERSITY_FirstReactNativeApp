@@ -4,11 +4,13 @@ import {
   StyleSheet,
   View,
 } from 'react-native';
+import TextInputComponent from './components/TextInput';
 
 function App(): React.JSX.Element {
   return (
     <View style={styles.container}>
-    <Basics />
+      <Basics />
+      <TextInputComponent />
     </View>
   );
 }
