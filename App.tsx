@@ -1,16 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { ScrollView, StyleSheet, View } from 'react-native';
 import Basics from './components/Basic';
-import {
-  StyleSheet,
-  View,
-} from 'react-native';
 import TextInputComponent from './components/TextInput';
 
-function App(): React.JSX.Element {
+function App() {
   return (
     <View style={styles.container}>
-      <Basics />
+      <ScrollView contentContainerStyle={styles.scrollViewContent}>
+        <Basics />
       <TextInputComponent />
+      </ScrollView>
     </View>
   );
 }
@@ -18,6 +17,9 @@ function App(): React.JSX.Element {
 const styles = StyleSheet.create({
   container: {
     marginBottom: 20,
+  },
+  scrollViewContent: {
+    padding: 10,
   },
 });
 
