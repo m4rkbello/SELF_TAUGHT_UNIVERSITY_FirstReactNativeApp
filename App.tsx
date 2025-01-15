@@ -8,7 +8,7 @@ function App() {
     <View style={styles.container}>
       <ScrollView contentContainerStyle={styles.scrollViewContent}>
         <Basics />
-      <TextInputComponent />
+        <TextInputComponent />
       </ScrollView>
     </View>
   );
