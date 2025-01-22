@@ -20,8 +20,6 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         mar
     },
-
-
 });
 
 export default ScrollView
