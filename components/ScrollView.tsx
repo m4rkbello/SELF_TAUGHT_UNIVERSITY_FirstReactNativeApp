@@ -22,4 +22,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default ScrollView
+export default ScrollView;
