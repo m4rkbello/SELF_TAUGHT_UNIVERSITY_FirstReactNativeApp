@@ -1,0 +1,2 @@
+1. PAG RUN SA ANDRIOD EMULATOR - LOCALLY 
+-> npx react-native run-andriod
