@@ -11,6 +11,7 @@ function ScrollView() {
     )
 }
 
+
 const styles = StyleSheet.create({
     container: {
         marginBottom: 20,
